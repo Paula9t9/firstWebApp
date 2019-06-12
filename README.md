@@ -1,4 +1,5 @@
-## Songr
+# Songr
+
 
 A basic web app for Code 401 students to get familiar with the basics of Spring. 
 
@@ -16,4 +17,14 @@ Capitalizes whatever string you put after the /
 
     /reverse?sentence={your string here}
     
+
 Takes the string you typed in and reverses it.  
+
+
+## How to Run
+
+From your command line, run 
+
+   
+    ./gradlew bootRun
+
