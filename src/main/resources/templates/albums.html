@@ -8,6 +8,9 @@
         <li th:each="album : ${albums}">
             <span th:text="${album.title}"></span>
             <span th:text="${album.artist}"></span>
+            <span th:text="${album.songCount}"></span>
+            <span th:text="${album.length}"></span>
+            <img th:src="${album.imageUrl}"/>
         </li>
     </ul>
 </body>
