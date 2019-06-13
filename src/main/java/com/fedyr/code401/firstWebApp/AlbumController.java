@@ -24,13 +24,6 @@ public class AlbumController {
         return "albums";
     }
 
-//    @PostMapping("/newAlbum")
-//    public ResponseEntity<?> addAlbums(@RequestParam("name") String name){
-//        Album album = new Album(name);
-//        albumRepository.save(album);
-//        return new ResponseEntity<>(album, HttpStatus.OK);
-//    }
-
     @GetMapping("/newAlbum")
     public String albumForm(Model model) {
         model.addAttribute("album", new Album());
@@ -40,7 +33,7 @@ public class AlbumController {
     @PostMapping("/newAlbum")
     public String albumSubmit(@ModelAttribute Album album) {
         albumRepository.save(album);
-        return "albums";
+        return "result";
     }
 
 
