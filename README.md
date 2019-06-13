@@ -2,7 +2,7 @@
 
 A basic web app for Code 401 students to get familiar with the basics of Spring.
 
-Add albums to a database and see them listed on the page.  
+Add albums to a database and see them listed on the page. 
 
 ## Features
 
@@ -18,6 +18,7 @@ Capitalizes whatever string you put after the /
 
     /reverse?sentence={your string here}
     
+
 Takes the string you typed in and reverses it.  
 
 #### Album Routes
@@ -37,3 +38,4 @@ From your command line, run
 
    
     ./gradlew bootRun
+
