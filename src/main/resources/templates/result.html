@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Album Submission Result Screen</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>The following album has been saved to the database:</h1>
+<p th:text="'Title: ' + ${album.title}" />
+<p th:text="'Artist: ' + ${album.artist}" />
+<p th:text="'Song Count: ' + ${album.songCount}" />
+<p th:text="'Length: ' + ${album.length}" />
+<img th:src="${album.imageUrl}"/>
+<a href="/newAlbum">Submit another album</a>
+<a href="/albums">See all albums</a>
+</body>
+</html>
