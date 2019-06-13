@@ -5,8 +5,9 @@
 <body>
     <h1>Albums</h1>
     <ul>
-        <li th:each="album : ${albumTitles}">
-            <span th:text="${album}"></span>
+        <li th:each="album : ${albums}">
+            <span th:text="${album.title}"></span>
+            <span th:text="${album.artist}"></span>
         </li>
     </ul>
 </body>
