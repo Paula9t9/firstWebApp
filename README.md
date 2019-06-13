@@ -1,10 +1,12 @@
 # Songr
 
-A basic web app for Code 401 students to get familiar with the basics of Spring. 
+A basic web app for Code 401 students to get familiar with the basics of Spring.
+
+Add albums to a database and see them listed on the page.  
 
 ## Features
 
-As of right now, this application only has a couple of basic routes:
+#### Basic routes
 
      /hello
 
@@ -17,6 +19,16 @@ Capitalizes whatever string you put after the /
     /reverse?sentence={your string here}
     
 Takes the string you typed in and reverses it.  
+
+#### Album Routes
+
+    /albums
+    
+See a list of all albums currently in the database.
+
+    /newAlbum
+    
+Add a new album to the database using the form provided. 
 
 
 ## How to Run
