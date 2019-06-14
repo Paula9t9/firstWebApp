@@ -1,9 +1,7 @@
 package com.fedyr.code401.firstWebApp;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Album {
@@ -16,6 +14,9 @@ public class Album {
     private int songCount;
     private long length;
     private String imageUrl;
+
+    @OneToMany(mappedBy = "album")
+    List<Song> songList;
 
 
     public Album(){}

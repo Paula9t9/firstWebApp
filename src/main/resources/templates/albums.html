@@ -11,6 +11,7 @@
             <span th:text="${album.songCount}"></span>
             <span th:text="${album.length}"></span>
             <img th:src="${album.imageUrl}"/>
+            <a th:href="@{'/album_details/' + ${album.id}}">See albums details</a>
         </li>
     </ul>
 </body>

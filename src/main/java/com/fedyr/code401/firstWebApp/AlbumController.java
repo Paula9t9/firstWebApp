@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 
@@ -31,6 +32,13 @@ public class AlbumController {
     public String albumSubmit(@ModelAttribute Album album) {
         albumRepository.save(album);
         return "result";
+    }
+
+    @GetMapping("/album_details/{id}")
+    public String getAlbumDetails(@PathVariable Long id, Model m){
+        Album album = albumRepository.findById(id).get();
+        m.addAttribute(album);
+        return "album_details";
     }
 
 
